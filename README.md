@@ -26,3 +26,35 @@ A modern, responsive portfolio website built with Bootstrap 5 and custom CSS. Th
 - CSS3
 - Bootstrap 5.3.3
 - Font Awesome 6.5.1
+
+### Content
+Update the content by modifying the HTML in `index.html`. The structure is organized into clear sections that can be easily modified.
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+Feel free to fork this project and customize it for your own use. If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Author
+
+Mehmet Emin Kirgin
+- Email: emehmetkirgin@gmail.com
+- LinkedIn: https://www.linkedin.com/in/mehmetkrgn
+- GitHub: https://github.com/mehmetkrgn
+- Twitter: https://x.com/mehmetkrgn
+
+## Acknowledgments
+
+- Bootstrap Team for their excellent framework
+- Font Awesome for the icons
+- Inter font family by Google Fonts
