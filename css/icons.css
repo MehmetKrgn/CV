@@ -1,0 +1,71 @@
+/* Icon Base */
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #00b894;
+    transition: transform 0.2s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Icon Sizes */
+.icon-sm {
+    font-size: 1rem;
+}
+
+.icon-md {
+    font-size: 1.2rem;
+}
+
+.icon-lg {
+    font-size: 1.5rem;
+}
+
+.icon-xl {
+    font-size: 2rem;
+}
+
+/* Icon Colors */
+.icon-primary {
+    color: #00b894;
+}
+
+.icon-white {
+    color: #ffffff;
+}
+
+.icon-grey {
+    color: #636e72;
+}
+
+/* Social Icons */
+.social-icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: white;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+/* Section Icons */
+.section-icon {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    color: #00b894;
+}
+
+/* Contact Icons */
+.contact-icon {
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}

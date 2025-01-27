@@ -1,0 +1,225 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f7fa;
+    line-height: 1.6;
+    color: #2d3436;
+}
+
+/* Layout */
+.page-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: -25px -25px 25px -25px;
+}
+
+.profile-img {
+    width: 100%;
+    transition: transform 0.4s ease;
+    display: block;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.profile-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    width: 100%;
+}
+
+/* Text and Headers */
+.section-header {
+    color: #2d3436;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f5f7fa;
+}
+
+.section-header i {
+    color: #00b894;
+    font-size: 1.8em;
+}
+
+.text-primary {
+    color: #00b894;
+}
+
+.text-grey {
+    color: #636e72;
+}
+
+/* Progress Bars */
+.progress-container {
+    background-color: #f5f7fa;
+    border-radius: 30px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(45deg, #00b894, #00cec9);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 8px 0;
+    transition: width 0.4s ease;
+}
+
+/* Links */
+a {
+    color: #00b894;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #00cec9;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li:before {
+    content: "•";
+    color: #00b894;
+    position: absolute;
+    left: 0;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(45deg, #00b894, #00cec9);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 12px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* Tags */
+.tag {
+    background: linear-gradient(45deg, #00b894, #00cec9);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 5px;
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+}
+
+/* Timeline for experience */
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #f5f7fa;
+}
+
+.timeline-item:after {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00b894;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-container {
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
